@@ -1,0 +1,19 @@
+@import "../../../styles/global.scss";
+
+$block-selector: "card";
+
+.#{$cls-prefix}-#{$block-selector} {
+  background: #fff;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 4px 0px #0000000f, 0 2px 2px 0px #0000000f;
+  padding: 16px;
+
+  &__ {
+    &title {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+    }
+  }
+}

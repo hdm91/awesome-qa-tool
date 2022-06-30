@@ -1,0 +1,11 @@
+@import "../../styles/global.scss";
+
+$block-selector: "layout";
+
+.#{$cls-prefix}-#{$block-selector} {
+  &__ {
+    &content {
+      padding: 0 16px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../styles/global.scss";
+
+$block-selector: "header";
+
+.#{$cls-prefix}-#{$block-selector} {
+  height: auto;
+  padding: 8px 16px;
+  box-shadow: 1px 0 4px 4px #1c1c1c14;
+  margin-bottom: 16px;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  background: #fff;
+
+  &__ {
+    &title {
+      margin-left: 16px;
+      font-size: 22px;
+      color: #5e5e5e;
+      font-weight: 600;
+      user-select: none;
+
+      & > span:first-child {
+        color: $question-color;
+      }
+
+      & > span:nth-child(2) {
+        color: $answer-color;
+      }
+    }
+
+    &logo {
+      height: 50px;
+      width: 50px;
+      user-select: none;
+      margin-left: -4px;
+    }
+  }
+}
